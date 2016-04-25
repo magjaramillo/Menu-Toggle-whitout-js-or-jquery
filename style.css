@@ -1,0 +1,82 @@
+body{
+    background: #0A5676;
+
+}
+
+
+
+
+.canvas{
+    
+    background: #ff004e;
+    margin: 0;
+    padding-top: 5em;
+    padding-left: 0;
+    width:13em;
+    height: 100vh;
+    box-sizing: border-box;
+
+}
+
+.canvas li{
+
+    border-top:2px solid #25020f;
+    margin:0;
+    padding-right: 1.5em;
+    list-style-type: none;
+    font-size: 2em;
+    line-height: 1.8em;
+    text-align: right;
+    display: block;
+    transition: all .4s ease;
+
+
+}
+
+.canvas a{
+    color: #25020f;
+    text-decoration: none;
+    display: block
+    
+}
+
+.canvas li:hover{
+    background: #B90C41;
+    color: white;
+}
+
+.canvas a:hover{
+    color: white;
+
+}
+
+/* ------------ toogle without js or jquery ------------------ */
+
+/* here hide menu*/
+.allCanvas{
+    position: absolute;
+    top:0;
+    left:0;
+    transition: all .3s ease;
+}
+
+/*here hide check icon*/
+#mostrarCanvas{
+    display: none;
+}
+/* this is icon menu  "press" */
+#mostrarCanvas + label{
+    background: #ff004e;
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+    left:85%;
+    padding: 0 .2em;
+    position:absolute;
+    top:0;
+}
+/*here show the menu*/
+#mostrarCanvas:checked ~ .allCanvas{
+    left:-110%;
+}
